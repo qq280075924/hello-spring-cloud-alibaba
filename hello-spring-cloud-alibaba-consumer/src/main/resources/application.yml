@@ -10,6 +10,21 @@ spring:
         dashboard: 127.0.0.1:8081
         # 当前应用被sentinel监控的端口
         port: 8720
+  datasource:
+    url: jdbc:mysql://localhost:3306/worksite?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      read-only: false
+      connection-timeout: 60000
+      idle-timeout: 60000
+      login-timeout: 5
+      maximum-pool-size: 60
+      minimum-idle: 10
+      connection-init-sql: set names utf8mb4
+    password: root
+  jpa:
+    show-sql: true
 
 server:
   port: 9091
