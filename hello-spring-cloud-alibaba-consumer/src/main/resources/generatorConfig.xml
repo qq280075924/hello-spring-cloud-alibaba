@@ -29,6 +29,7 @@
         <commentGenerator type="com.plugin.CommentGenerator">
             <property name="suppressAllComments" value="false"/>
         </commentGenerator>
+
         <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/worksite?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai"
                         driverClass="com.mysql.cj.jdbc.Driver" password="root" userId="root" >
 

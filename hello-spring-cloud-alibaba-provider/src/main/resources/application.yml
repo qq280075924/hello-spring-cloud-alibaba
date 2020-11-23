@@ -7,7 +7,7 @@ spring:
         server-addr: 127.0.0.1:8848
 
 server:
-  port: 8081
+  port: 8083
 
 management:
   endpoints:
@@ -16,10 +16,10 @@ management:
         include: "*"
 
 
-#user:
-#  id: 1
-#  name: mireal
-#  age: 17
+user:
+  id: 1
+  name: mireal
+  age: 17
 #management:
 #  endpoints:
 #    web:
