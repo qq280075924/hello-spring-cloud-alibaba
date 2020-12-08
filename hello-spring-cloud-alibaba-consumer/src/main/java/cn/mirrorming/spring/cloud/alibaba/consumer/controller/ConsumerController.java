@@ -109,7 +109,7 @@ public class ConsumerController {
             e.printStackTrace();
         }
         // 2.检查是否大于1000条
-        if (userExcelList.size() > MAX_USER_IMPORT) {
+        if (null != userExcelList && userExcelList.size() > MAX_USER_IMPORT) {
             throw new GlobalException(CodeMsg.OVER_MAX_USER_IMPORT_LIMIT.fillArgs(MAX_USER_IMPORT));
         }
         // 3.导入校验所有行列格式

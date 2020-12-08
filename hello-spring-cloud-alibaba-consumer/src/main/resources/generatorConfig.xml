@@ -22,6 +22,8 @@
             &lt;!&ndash; 是否去除自动生成的注释 true：是 ： false:否 &ndash;&gt;
             <property name="suppressAllComments" value="true" />
         </commentGenerator>-->
+
+        <!-- 生成带@Data的pojo -->
         <plugin type="com.plugin.ToStringPlugin"/>
         <plugin type="com.plugin.LombokPlugin"/>
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
@@ -51,9 +53,30 @@
         </javaClientGenerator>
 
         <!--数据库表-->
-        <table tableName="archive_manage" domainObjectName="archiveManage"
+        <table tableName="archive_manage" domainObjectName="ArchiveManage"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
         </table>
+        <table tableName="institution_manage" domainObjectName="InstitutionManage"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+        </table>
+        <table tableName="meeting_manage" domainObjectName="MeetingManage"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+        </table>
+        <table tableName="oa_attachment" domainObjectName="OaAttachment"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+        </table>
+        <table tableName="safe_duty_list" domainObjectName="SafeDutyList"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+        </table>
+        <table tableName="safe_duty_manage" domainObjectName="SafeDutyManage"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false" >
+        </table>
+
     </context>
 </generatorConfiguration>
